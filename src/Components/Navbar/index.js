@@ -24,22 +24,27 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="menu">
-        <div className="logo">
+        <div className="menu__logo">
           <a href="">Logo</a>
         </div>
-        <div className="menuCon">
-          <div className="leftMenu">
+        <div className="menu__container">
+          <div className="menu_left">
             <LeftMenu mode="horizontal" />
           </div>
-          <div className="rightMenu">
+          <div className="menu_rigth">
             <RightMenu mode="horizontal" />
           </div>
-          <Button className="barsMenu" type="primary" onClick={this.showDrawer}>
+          <Button
+            className="menu__mobile-button"
+            type="primary"
+            onClick={this.showDrawer}
+          >
             <Icon type="align-right" />
           </Button>
           <Drawer
             title="Basic Drawer"
             placement="right"
+            className="menu_drawer"
             closable={false}
             onClose={this.onClose}
             visible={this.state.visible}

@@ -7,48 +7,48 @@
   box-shadow: 0 0 30px #f3f1f1;
 }
 
-.logo {
+.menu__logo {
   width: 150px;
   float: left;
 }
 
-.logo a {
+.menu__logo a {
   display: inline-block;
   font-size: 20px;
   padding: 19px 20px;
 }
 
-.menuCon {
+.menu__container {
   width: calc(100% - 150px);
   float: left;
 }
 
-.menuCon .ant-menu-item {
+.menu__container .ant-menu-item {
   padding: 0px 5px;
 }
 
-.menuCon .ant-menu-submenu-title {
+.menu__container .ant-menu-submenu-title {
   padding: 10px 20px;
 }
 
-.menuCon .ant-menu-item a,
-.menuCon .ant-menu-submenu-title a {
+.menu__container .ant-menu-item a,
+.menu__container .ant-menu-submenu-title a {
   padding: 10px 15px;
 }
 
-.menuCon .ant-menu-horizontal {
+.menu__container .ant-menu-horizontal {
   border-bottom: none;
 }
 
-.menuCon .leftMenu {
+.menu__container .menu_left {
   float: left;
 }
 
-.menuCon .rightMenu {
+.menu__container .menu_rigth {
   float: right;
 }
 
-.barsMenu {
+.menu__mobile-button {
   float: right;
   height: 32px;
   padding: 6px;
@@ -57,31 +57,30 @@
   background: none;
 }
 
-/* not scoped to component because ant design renders it outside */
-.ant-drawer-body {
+.menu_drawer .ant-drawer-body {
   padding: 0 !important;
 }
 
 @media (max-width: 767px) {
-  .barsMenu {
+  .menu__mobile-button {
     display: inline-block !important;
   }
 
-  .leftMenu,
-  .rightMenu {
+  .menu_left,
+  .menu_rigth {
     display: none;
   }
 
-  .logo a {
+  .menu__logo a {
     margin-left: -20px;
   }
 
-  .menuCon .ant-menu-item,
-  .menuCon .ant-menu-submenu-title {
+  .menu__container .ant-menu-item,
+  .menu__container .ant-menu-submenu-title {
     padding: 1px 20px;
   }
 
-  .logo a {
+  .menu__logo a {
     padding: 10px 20px;
   }
 }
