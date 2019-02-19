@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { Menu, Icon } from 'antd';
+import { Menu } from 'antd';
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
 class LeftMenu extends Component {
   render() {
     return (
-			<Menu mode="horizontal">
-      	<Menu.Item key="mail">
-          <a href="">Home</a>
+      <Menu mode={this.props.mode}>
+        <Menu.Item key="mail">
+          <a href="#">Home</a>
         </Menu.Item>
         <SubMenu title={<span>Blogs</span>}>
           <MenuItemGroup title="Item 1">
@@ -21,7 +21,7 @@ class LeftMenu extends Component {
           </MenuItemGroup>
         </SubMenu>
         <Menu.Item key="alipay">
-          <a href="">Contact Us</a>
+          <a href="#">Contact Us</a>
         </Menu.Item>
       </Menu>
     );
