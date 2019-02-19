@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LeftMenu from './LeftMenu';
 import RightMenu from './RightMenu';
-import { Drawer, Button } from 'antd';
+import { Drawer, Button, Icon } from 'antd';
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -34,7 +34,7 @@ class Navbar extends Component {
             <RightMenu mode="horizontal" />
           </div>
           <Button className="barsMenu" type="primary" onClick={this.showDrawer}>
-            <span className="barsBtn" />
+            <Icon type="align-right" />
           </Button>
           <Drawer
             title="Basic Drawer"

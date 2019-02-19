@@ -14,3 +14,7 @@ Clone and run:
 yarn install
 yarn start
 ```
+
+### Disclaimer
+
+- Not using `babel-plugin-import` for simplicity
