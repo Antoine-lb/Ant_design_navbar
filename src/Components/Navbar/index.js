@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import LeftMenu from './LeftMenu';
 import RightMenu from './RightMenu';
 import { Drawer, Button } from 'antd';
+import './Navbar.css';
 
 class Navbar extends Component {
   state = {
@@ -23,7 +24,7 @@ class Navbar extends Component {
     return (
       <nav className="menuBar">
         <div className="logo">
-          <a href="">logo</a>
+          <a href="">Logo</a>
         </div>
         <div className="menuCon">
           <div className="leftMenu">
