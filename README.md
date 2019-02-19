@@ -1,6 +1,14 @@
+# Responsive navigation made in Ant Design
 
-## How to start
+Live Demo: https://ant-design-navbar.firebaseapp.com/
 
--  git clone https://github.com/Rupinderthind/Ant_design_navbar.git
--  yarn install
--  yarn start
+Responsive navigation bar using `Menu` and `Drawer` from Ant Design.
+
+# To run locally
+
+Clone and run:
+
+```
+yarn install
+yarn start
+```
