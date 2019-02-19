@@ -8,6 +8,7 @@ class Navbar extends Component {
   state = {
     visible: false
   };
+
   showDrawer = () => {
     this.setState({
       visible: true
@@ -22,7 +23,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="menuBar">
+      <nav className="menu">
         <div className="logo">
           <a href="">Logo</a>
         </div>
